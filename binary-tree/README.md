@@ -9,6 +9,7 @@ type Node struct {
 }
 ```
 * Simple Binary Tree Construction
+[Example Code](https://play.golang.org/p/yDOdO1wchyH)
 ``` go
 package main
 
@@ -46,22 +47,78 @@ func inOrder(r *Node) {
 	if r == nil {
 		return
 	}
-	fmt.Println(r.Value)
 	if r.Left != nil {
 		inOrder(r.Left)
 	}
+	fmt.Println(r.Value)
 	if r.Right != nil {
 		inOrder(r.Right)
 	}
 }
 
-/* Outputs */
-//        10
-//       /	\
-//      5    25
-//       \  /
-//        6 20 
+/* 
+Outputs 
+------------
+5 6 10 20 25
+*/
+```
 
+## Traversal
+* InOrder - Left, Root, Right
+
+``` go
+func inOrder(r *Node) {
+	if r == nil {
+		return
+	}
+	if r.Left != nil {
+		inOrder(r.Left)
+	}
+	fmt.Println(r.Value)
+	if r.Right != nil {
+		inOrder(r.Right)
+	}
+}
+```
+
+* PreOrder - Root, Left, Right
+
+``` go
+func preOrder(r *Node) {
+	if r == nil {
+		return
+	}
+	
+	fmt.Println(r.Value)
+	
+	if r.Left != nil {
+		inOrder(r.Left)
+	}
+
+	if r.Right != nil {
+		inOrder(r.Right)
+	}
+}
 
 ```
 
+* PostOrder - Left, Right, Root
+
+``` go
+func postOrder(r *Node) {
+	if r == nil {
+		return
+	}
+	
+	if r.Left != nil {
+		inOrder(r.Left)
+	}
+	
+	if r.Right != nil {
+		inOrder(r.Right)
+	}
+	
+	fmt.Println(r.Value)
+}
+
+```
