@@ -64,7 +64,7 @@ Outputs
 ```
 
 ## Traversal
-* InOrder - Left, Root, Right
+* In Order - Left, Root, Right
 
 ``` go
 func inOrder(r *Node) {
@@ -81,7 +81,7 @@ func inOrder(r *Node) {
 }
 ```
 
-* PreOrder - Root, Left, Right
+* Pre Order - Root, Left, Right
 
 ``` go
 func preOrder(r *Node) {
@@ -102,7 +102,7 @@ func preOrder(r *Node) {
 
 ```
 
-* PostOrder - Left, Right, Root
+* Post Order - Left, Right, Root
 
 ``` go
 func postOrder(r *Node) {
@@ -138,5 +138,11 @@ func sizeOfTree(r *Node) int{
 	
 	return size
 }
+```
+
+* Size of a tree using Iteration
+
+``` go
+
 ```
 
