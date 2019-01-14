@@ -29,3 +29,12 @@ find searchMinimumValue(r *Node) interface{} {
 	return searchMinimumValue(r.Left)
 }
 ```
+
+* Find Maximum value in BST
+
+``` go
+find searchMaximumValue(r *Node) interface{} {
+	if r.Right == nil {return r.Value}
+	return searchMaximumValue(r.Right)
+}
+```
