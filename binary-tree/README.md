@@ -122,3 +122,21 @@ func postOrder(r *Node) {
 }
 
 ```
+* Size of a tree using Recursion
+``` go
+func sizeOfTree(r *Node) int{
+	if r == nil {return 0}
+	size := 1
+	
+	if r.Left != nil {
+		size = size + sizeOfTree(r.Left)
+	}
+	
+	if r.Right != nil {
+		size = size + sizeOfTree(r.Right)
+	}
+	
+	return size
+}
+```
+
