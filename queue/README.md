@@ -4,6 +4,7 @@ the queue will be implemented with `slice` type.
 ## Installation
 ```bash
 go get github.com/cheekybits/genny
+cd <this directory>
 cat queue.go | genny gen "Item=string"
 ```
 
