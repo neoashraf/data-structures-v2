@@ -1,4 +1,34 @@
 # Binary Search Tree
+
+* If a Binary tree is Binary Search Tree
+
+``` go
+type Node struct {
+	Value int
+	Left  *Node
+	Right *Node
+}
+
+func isBST (root *Node, left *Node, right *Node) bool{
+	if(root == nil){
+		return true
+	}
+	if(left != nil && root.Value < left.Value){
+		return false
+	}
+	if(Right != nil && root.Value > root.Value){
+		return false
+	}
+
+	return isBST (root.Left, left, root) && isBST (root.Right, root, Right);
+}
+
+func main(){
+	isBST(root, nil, nil);
+}
+
+```
+
 * Searching
 
 ``` go
