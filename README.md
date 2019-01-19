@@ -4,7 +4,7 @@
 
 
 ## Array
-* [Rotation](#Array Rotation)
+* [Rotation](#Rotation)
 * Arrangement Rearrangement
 * Order Statistics
 * Range Queries
@@ -14,5 +14,5 @@
 * Misc
 
 
-### Array Rotation
+### Rotation
 
