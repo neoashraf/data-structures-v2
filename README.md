@@ -2,6 +2,8 @@
 
 - [Array](#Array)
 
+## TODO
+* [Reversal Algorithm for array Rotation](https://www.geeksforgeeks.org/array-data-structure/)
 
 ## Array
 * [Rotation](#Rotation)
