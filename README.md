@@ -4,7 +4,7 @@
 
 
 ## Array
-* Rotation
+* [Rotation](#Array Rotation)
 * Arrangement Rearrangement
 * Order Statistics
 * Range Queries
@@ -12,3 +12,7 @@
 * Optimization Problems
 * Matrix
 * Misc
+
+
+### Array Rotation
+
